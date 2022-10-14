@@ -22,7 +22,7 @@ skin health & beauty, and quality of life in society.
 
 ## Features
 
-![](/media/DermatAI.mp4)
+https://user-images.githubusercontent.com/87471481/195846477-8ec1d0b8-d704-442b-9ce2-0ffbdaa8f6c4.mp4
 
 - **Disease Checker:** Scan the suspected skin area with the app's camera. The app will provide disease
 results in fractions of seconds.
