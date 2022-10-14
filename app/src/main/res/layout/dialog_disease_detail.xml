@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_rounded">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/scan_result"
+        android:textColor="@color/iris"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toStartOf="@id/ibClose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/svDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/btnShare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibClose">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivScanned"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:padding="@dimen/_2sdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@id/ivDisease"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/semiRoundedCornersImageView"
+                app:strokeColor="@color/iris"
+                app:strokeWidth="@dimen/_2sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvScannedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/scanned_image"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/ivScanned"
+                app:layout_constraintStart_toStartOf="@id/ivScanned"
+                app:layout_constraintTop_toBottomOf="@id/ivScanned" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivDisease"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@id/ivScanned"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivScanned"
+                app:layout_constraintTop_toTopOf="@id/ivScanned"
+                app:shapeAppearanceOverlay="@style/semiRoundedCornersImageView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDiseaseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/disease_image"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@id/ivDisease"
+                app:layout_constraintStart_toStartOf="@id/ivDisease"
+                app:layout_constraintTop_toBottomOf="@id/ivDisease" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDisease"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDiseaseLabel"
+                tools:text="@string/acne" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOverviewLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/overview"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDisease" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOverview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOverviewLabel"
+                tools:text="Acne, also known as acne vulgaris, is thought to be caused by multiple factors. Overproduction of a normal oil on the skin, called sebum, increases under the influence of hormones. This, coupled with insufficient shedding of exfoliating dead skin cells. Acne, also known as acne vulgaris, is thought to be caused by multiple factors. Overproduction of a normal oil on the skin, called sebum, increases under the influence of hormones. This, coupled with insufficient shedding of exfoliating dead skin cells. Acne, also known as acne vulgaris, is thought to be caused by multiple factors. Overproduction of a normal oil on the skin, called sebum, increases under the influence of hormones. This, coupled with insufficient shedding of exfoliating dead skin cells. Acne, also known as acne vulgaris, is thought to be caused by multiple factors. Overproduction of a normal oil on the skin, called sebum, increases under the influence of hormones. This, coupled with insufficient shedding of exfoliating dead skin cells." />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@null"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShare"
+        style="@style/ButtonIris"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text="@string/share_with_doctor"
+        app:layout_constraintBottom_toTopOf="@+id/btnNearBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNearBy"
+        style="@style/ButtonIris"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text="@string/near_by_skin_clinic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

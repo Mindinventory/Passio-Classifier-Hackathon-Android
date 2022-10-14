@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Dermat AI</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="allow_to_access_camera">Allow an app to access your camera</string>
+    <string name="allow">Allow</string>
+    <string name="cancel">Cancel</string>
+    <string name="scan_disease">Scan Disease</string>
+    <string name="start">Start</string>
+    <string name="start_scan">Start Scan</string>
+    <string name="acne">Acne (Acne Vulgaris)</string>
+    <string name="overview">Overview</string>
+    <string name="know_more">Know More</string>
+    <string name="search_disease">Search Disease</string>
+    <string name="sdk_not_ready">SDK NOT READY</string>
+    <string name="sdk_failed_to_configure">SDK FAILED TO CONFIGURE</string>
+    <string name="sdk_being_configured">SDK BEING CONFIGURED</string>
+    <string name="share_with_doctor">Share With Doctor</string>
+    <string name="near_by_skin_clinic">Search Near By Skin Clinic</string>
+    <string name="kindly_refer_attached_disease">Kindly refer attached %1$s disease image.\nShared from Dermat AI App</string>
+    <string name="allow_to_access_photos_medias">Allow an app to access photos and medias</string>
+    <string name="consulting_for_skin_disease">Consulting for %1$s skin disease</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="scan_result">Scan Result</string>
+    <string name="scanned_image">Scanned Image</string>
+    <string name="disease_image">Disease Image</string>
+    <string name="scan">Scan</string>
+    <string name="scan_detail">Scan the suspected area of your body.</string>
+    <string name="result">Result</string>
+    <string name="result_detail">Get the disease detected within seconds.</string>
+    <string name="reach_out_doctor">Reach out to doctor</string>
+    <string name="reach_doctor_detail">Share your disease picture with doctor or reach out to a near by Skin specialist.</string>
+</resources>

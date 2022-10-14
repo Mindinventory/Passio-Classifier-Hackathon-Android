@@ -1,0 +1,36 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.SkinDiseaseDetector" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/iris</item>
+        <item name="colorPrimaryVariant">@color/iris</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/iris</item>
+        <item name="colorSecondaryVariant">@color/iris</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/iris</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.SkinDiseaseDetector">
+        <item name="colorPrimaryDark">@color/iris</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="semiRoundedCornersImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="roundedCornersImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_20sdp</item>
+    </style>
+
+</resources>

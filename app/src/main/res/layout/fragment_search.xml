@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@null"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@id/tvSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvSearch" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSearch"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/search_disease"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvSearch"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSearch">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/search_disease"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@color/iris"
+                android:textColorHint="@color/black_60"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toStartOf="@id/ibClear"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@null"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_close"
+                app:layout_constraintBottom_toBottomOf="@id/clSearch"
+                app:layout_constraintEnd_toEndOf="@id/clSearch"
+                app:layout_constraintTop_toTopOf="@id/clSearch" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvSearch"
+        tools:listitem="@layout/row_search" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
