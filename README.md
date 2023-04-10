@@ -5,6 +5,14 @@ unusual or alerting skin conditions.
 ## Category
 - Medical
 
+## Passio Mobile AI Platform
+[Passio.ai](https://www.passio.ai/) is launching a game-changing [Mobile AI Platform](https://www.passio.ai/mobile-ai-platform) and we are inviting you to join our first [hackathon](https://www.passio.ai/hackathon-sign-up)! We’re challenging you to come up with a real world problem that could be solved with on-device image classification and build an app to solve it. Participants will get the opportunity to use Passio’s Mobile AI Platform to build an image classification SDK and deploy that SDK in mobile apps.
+
+Please go through the below links for more details.
+- https://www.passio.ai/
+- https://www.passio.ai/hackathon-sign-up
+- https://www.passio.ai/mobile-ai-platform
+
 ## About the app
 Skin is the most important part of the body so we need to take care of it as much as we can.
 
